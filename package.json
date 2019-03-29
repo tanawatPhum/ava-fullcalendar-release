@@ -1,6 +1,6 @@
 {
-    "name": "fullcalendar",
-    "title": "FullCalendar",
+    "name": "ava-fullcalendar",
+    "title": "ava-fullCalendar",
     "description": "Full-sized drag & drop event calendar",
     "keywords": [
         "calendar",

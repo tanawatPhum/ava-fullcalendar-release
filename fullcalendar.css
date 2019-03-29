@@ -1,5 +1,5 @@
 /*!
- * FullCalendar v0.0.0
+ * ava-FullCalendar v0.0.0
  * Docs & License: https://fullcalendar.io/
  * (c) 2018 Adam Shaw
  */
@@ -1159,8 +1159,6 @@ NOTE: use percentage font sizes or else old IE chokes
     /* top: 0; */
     left: 22px;
     z-index: -1; }
-  #calendar {
-    min-height: 665px; }
   .fc-content-skeleton td {
     text-align: center; }
   .fc-row .fc-widget-header {
@@ -1205,7 +1203,8 @@ NOTE: use percentage font sizes or else old IE chokes
     position: unset !important; }
   .fc-unthemed .fc-list-empty {
     background: white !important; }
-  .fc th, .fc td {
+  .fc th,
+  .fc td {
     border-width: 0px !important; } }
 
 /* AgendaView all-day area
@@ -1478,6 +1477,9 @@ be a descendant of the grid when it is being dragged.
   border-top-color: transparent;
   border-bottom-color: transparent; }
 
+.fc-title {
+  color: #007bff; }
+
 /* List View
 --------------------------------------------------------------------------------------------------*/
 /* possibly reusable */
@@ -1574,3 +1576,5 @@ be a descendant of the grid when it is being dragged.
 .fc-unthemed .fc-list-empty {
   /* theme will provide own background */
   background-color: #eee; }
+
+/*# sourceMappingURL=fullcalendar.css.map*/
