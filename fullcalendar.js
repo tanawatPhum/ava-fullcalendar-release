@@ -12960,7 +12960,7 @@
                         var calendar = this.calendar;
                         var theme = calendar.theme;
                         var optionsManager = calendar.optionsManager;
-                        console.log(optionsManager);
+                        console.log("optionsManager", optionsManager);
                         var viewSpecManager = calendar.viewSpecManager;
                         var sectionEl = $('<div class="fc-' + position + '"/>');
                         var buttonStr = this.toolbarOptions.layout[position];
@@ -13090,6 +13090,12 @@
                         return sectionEl;
                     };
                     Toolbar.prototype.updateTitle = function(text) {
+                        if (this.calendar.optionsManager.overrides.locale === 'th') {
+                            var year = text.match(/\d{4}/);
+                            // tslint:disable-next-line:radix
+                            var BEYear = year && parseInt(year[0]) + 543;
+                            text = text.replace(/\d{4}/, BEYear);
+                        }
                         if (this.el) {
                             this.el.find('h2').text(text);
                         }
